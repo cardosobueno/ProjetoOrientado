@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset= "UTF-8">
+    <title>Sobre você</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="icon" href="imagens/Cara-Aleatorio-FaceIcon.png">
+</head>
+<body>
+
+<h1 class="centralizador">Projeto Orientado</h1>
+  <div class="centralizador">
+      <a href="index.html">  Home  </a>
+      |
+      <a href="andrebueno.html">  André Bueno  </a>
+      |
+      <a href="curiosidades.html">  Tabela de Curiosidades  </a>
+      |
+      <a href="sites.html"> Sites Favoritos </a>
+      |
+      <a href="descobrindoTags.html">Descobrindo Tags</a>
+      |
+      <a href="descobrindoCSS.html">Descobrindo CSS</a>
+      |
+      <a href="contato.html">Contato</a>
+  </div>
+
+
+
+
+<h2> 
+  
+<abbr title= "sigla"
+id="sigla"> FATEC/RL</abbr>
+<strong> Santos</strong>
+</h2>
+
+
+
+
+<form action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php" method="POST" target="_blank" class="CaixaTexto1" style="height: 1000px;"> 
+<p>
+<label class="centralizador">
+Nome: <br><input type="text" name="nome" size = "35" maxlength="30" >
+</label>
+</p>
+<!-- 
+<label for= "nome">Nome</label>
+<input type="text" id ="nome" name="nome" size = "35" maxlength="30" >
+-->
+<p>
+  <!--
+<label for= "email"  class="centralizador">Email: <br>
+-->
+<input type="email" id ="email" name="email" size = "30" maxlength="30" class="corPretaInput" placeholder="Seu e-mail"></label>
+<input type="submit" value="Cadastrar" class="corPretaInput" style="height: 35px;">
+</p>
+
+<p>
+<label for= "tel" class="centralizador"> Telefone: <br>
+<input type="tel" id="tel" pattern="[0-9]{11}" placeholder="Exemplo: 13991234567" name="tel" maxlength="11"></label>
+</p>
+<p>
+<label for= "aniversario" class="centralizador"> Data de aniversário: <br>
+<input type="date" id="aniversario" name="aniversario" min="1900-01-01" max="2020-12-31"></label>
+</p>
+
+<p>
+<label for="hora">Quantas horas você passa estudando?</label>
+<input type="time" id="hora" name="horas estudando" min="00:00" max="23:59">
+</p>
+<p>
+  <div>
+    <label for="gosto">O quanto você gosta de estudar?</label>
+    <input type="range" id="gosto" name="gosto de estudar"  min="0" max="10">
+  </div> 
+
+<p>
+    <label for= "comment" class="centralizador" >O que você mais gosta de fazer? por quê?<br></label>
+    <div  class="centralizador">
+    <textarea id ="comment" name="comentário" maxlength="300" cols="30" rows="8" ></textarea>
+    </div>
+
+   
+
+<p>
+    <label for= "secret" class="centralizador">Me conte um segredo</label>
+    <div  class="centralizador">
+    <input type="password" id ="secret" name="segredo" placeholder="Fique tranquilo! Ninguém conseguirá ler." size = "50" maxlength="100" >
+    </div>
+
+
+
+<p class="centralizador">
+Você sabia que a página do Mozilla Web Docs sobre controles HTML não está traduzida?
+
+<div class="centralizador">
+<ul>
+    <li>
+      <label for="responde">SIM!</label>
+      <input type="radio" id="responde" name="resposta" value="Sim">
+    </li>
+    <li>
+      <label for="responde">NÃO!</label>
+      <input type="radio" id="responde2" name="resposta" value="Nao">
+    </li>
+    <li>
+      <label for="responde">TALVEZ???</label>
+      <input type="radio" id="responde3" name="resposta" disabled>
+    </li> 
+    
+</ul>
+</div>
+
+<div class="centralizador">
+<p> <label for= "file">Envie uma foto sua:<br>
+  <input type="file" id ="file" name="arquivo" accept="image/*"></label>
+</div>
+
+
+<input type="hidden" id="hidden" name="hidden" value="Input escondido no código! Não aparece para o usuário.">
+
+<div class="centralizador">
+<!-- <button>Cadastrar</button> -->
+<input type="submit" value="Cadastrar">
+</div>
+<div class="centralizador">
+<input type = "reset" name = "reset"  value = "Limpar Campos">
+</div>
+
+</form>
+
+</body>
+
+</html>

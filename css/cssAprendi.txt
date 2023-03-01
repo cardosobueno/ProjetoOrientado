@@ -1,0 +1,21 @@
+Border Radius
+
+<div> para centralizar
+
+fonte custom https://www.youtube.com/watch?v=3YIXnxA1kqg
+
+margin-left: auto;
+margin-right: auto;
+https://www.w3.org/Style/Examples/007/center.en.html
+
+https://www.youtube.com/watch?v=biI9OFH6Nmg
+
+
+
+transition
+
+https://html-css-js.com/css/generator/box-shadow/
+
+
+th n existe 
+tr e td

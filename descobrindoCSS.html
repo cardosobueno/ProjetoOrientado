@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset= "UTF-8">
+    <title>Descobrindo CSS</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="icon" href="imagens/Cara-Aleatorio-FaceIcon.png">
+</head>
+
+<body>
+    <h1 class="centralizador">Projeto Orientado</h1>
+    <div class="centralizador">
+        <a href="index.html">  Home  </a>
+        |
+        <a href="andrebueno.html">  André Bueno  </a>
+        |
+        <a href="curiosidades.html">  Tabela de Curiosidades  </a>
+        |
+        <a href="sites.html"> Sites Favoritos </a>
+        |
+        <a href="descobrindoTags.html">Descobrindo Tags</a>
+        |
+        <a href="descobrindoCSS.html">Descobrindo CSS</a>
+        |
+        <a href="contato.html">Contato</a>
+    </div>
+    
+    <h2 class= "h2Tipo2"> Descobrindo CSS</h2>
+
+    <div class="CaixaTexto2" style=" height: 400px;">
+    <h3 class="h3Tipo2" > border-radius </h3>
+    <p> A primeira propriedade CSS que procurei foi a <strong> border-radius </strong>. Ela pode ser usada para suavizar a borda de imagens, caixas de texto, etc. </p>
+    <p> Abaixo vemos uma imagem sem borda alguma, e do lado direito a mesma imagem com 50 pixels de borda (border-radius: 50px)
+       <p> <img src="imagens/Cara-Aleatorio-Face.jpg" alt="Logo do Cara Aleatório sem borda" class="img2" style="float: left;margin-left: 300px;border-radius: 0px;box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.92);"> </p>
+       <p> <img src="imagens/Cara-Aleatorio-Face.jpg" alt="Logo do Cara Aleatório com borda" class="img2" style="float: right;margin-right: 300px;border-radius: 50px; box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.92);"> </p> 
+       
+    </div>
+
+    <div class="CaixaTexto2">
+    <h3 class="h3Tipo2"> Fonte customizada </h3>
+    <p> Para usar uma fonte baixada da internet, é muito simples: </p>
+    <p> Basta baixar uma fonte .otf ou .ttf; colocar o arquivo numa pasta com o nome "fonts" onde essa deve ser encontrada dentro da pasta "css" junto com o arquivo "main.css"</p> 
+    <p> Após isso, vá no arquivo main.css e crie a regra @font-face. Dentro desta regra, insira o local que o arquivo da fonte se encontra e insira o formato do arquivo.</p>
+    <p> Exemplo: </p> 
+    <p><strong>@font-face {
+        font-family: "FonteCustom";
+        src: url('fonts/JosefinSans-Regular.ttf') format('truetype');</strong>
+    }
+    </p>
+    <p> Na hora de utilizar a fonte, não se esqueça de inclui-lá na propriedade font-family.</p>
+    </div>
+
+    <div class="CaixaTexto2">
+    <h3 class="h3Tipo2"> Centralizando no centro itens centrais</h3>
+    <p> Tive um pouco de dificuldade para centralizar caixas de texto e imagens. Felizmente o site oficial do W3C tem uma <a href="https://www.w3.org/Style/Examples/007/center.en.html"  target="_blank">página ensinando</a>.</p>
+    <p> Utilizei da propriedade "margin-left: auto;" e "margin-right: auto;" e os itens ficaram centralizados perfeitamente.
+
+    </div>
+    <div class="CaixaTexto2">
+        <h3 class="h3Tipo2"> Animação simples de transição </h3>
+        <p> Usando a propriedade "transition", é possível criar uma pequena animação em um elemento. Utilizei isso no H1 de todas as páginas, causando uma pequena animação ao abri-lá.
+        <p> Exemplo do código que usei:
+        <p> h1{
+            background-color: #14213d;
+            color:white;
+            padding: 10px;
+            border-radius: 15px;
+            <strong>transition: 0.75s;</strong>
+          
+        }
+
+        <p> Existem também funções como ease-in-out que suavizam ainda mais a animação de transição.
+    </div>
+
+    <div class="CaixaTexto2">
+        <h3 class="h3Tipo2"> Sombra em elementos. </h3>
+        <p> Uma boa maneira de enfeitar elementos de uma página é utilizando a propriedade "box-shadow". Essa propriedade projeta uma sombra atrás do elemento. O usuário também pode manipular os valores para mudar a posição, cor, e força da sombra.
+        <p> Exemplo do código que usei:
+        <p> <strong> box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);</strong> <br>
+        <p> Uma ferramenta excelente para criação de sombras pode ser encontrada nesse <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Box-shadow_generator" target="_blank">link</a>.
+        <p> Com ela você monta sombras mexendo numa interface criada pela <strong>Mozilla Developer Network.</strong>   
+    
+    </div>
+
+    <div class="CaixaTexto2">
+        <h3 class="h3Tipo2"> Linhas com cores diferentes</h3>
+        <p> Nas tabelas de sites favoritos e curiosidades, achei interessante incluir linhas com cores diferentes em cada item para facilitar a leitura dos dados.
+        <p> Usando a pseudoclasse "nth-of-type" em um elemento de tabela, você consegue colocar cada linha de uma cor distinta.
+        <p> Exemplo do código que usei:
+        <p><strong>.tabelaCuriosa tbody tr:nth-of-type(even) {
+            background-color: #e5e5e5;
+            color: black;
+          }
+        </strong>
+        <p><strong>.tabelaSites li:nth-of-type(even) {
+            background-color: #e5e5e5;
+        }
+    </strong>
+    
+   
+    </p>  
+
+    </div>
+
+</body>
+
+
+</html>
